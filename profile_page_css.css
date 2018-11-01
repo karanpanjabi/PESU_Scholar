@@ -1,0 +1,51 @@
+:root {
+    --back-col: black;
+    --fore-col: white;
+}
+
+#navbar {
+    height: 60px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: var(--fore-col);
+    /* border: dotted; */
+}
+
+h1 {
+    display: inline;
+    font-family: consolas;
+    color: var(--fore-col);
+    background-color: var(--back-col);
+    margin: 10px 10px 10px 10px;
+}
+
+nav {
+    align-content: right;
+    /* border: dotted; */
+    float: right;
+}
+
+#div_profile {
+    border: dotted;
+    background-color: var(--back-col);
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+#div_profpic {
+    border: dotted;
+    border-radius: 50%; 
+    /* display: inline; */
+    width:128px; 
+    overflow: hidden;
+    margin: 30px;
+}
+
+* {
+    font-family: consolas;
+}
+
+#prof_name {
+    color: var(--fore-col);
+}
