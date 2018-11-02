@@ -8,7 +8,7 @@ This is the github repo for the web-tech project undertaken by section D chaps: 
     Front-end:
     * Login: Almost done
     * Sign-up: Don't know
-    * Profile: 5%
+    * Profile: 35%
     * Research/Project submission page: Not started
     * Discussion-space: Not started
     * Landing-page: Not started
