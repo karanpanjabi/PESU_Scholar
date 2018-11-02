@@ -78,6 +78,14 @@ nav {
     color: var(--fore-col);
 }
 
+#res_proj_new {
+    overflow: auto;
+    margin-top: 10px; 
+    color: var(--fore-col);
+    text-align: center;
+    font-size: 20px;
+}
+
 #contact_info {
     border: dotted;
     width: 26vw;
