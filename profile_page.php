@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<?php
+    require("dbinfo.php");
+
+    $table = "accountinfo";
+    $userdataquery = <<< Q
+    SELECT * FROM $table WHERE username='{$_COOKIE["profgetusername"]}'
+Q;
+    $userdata = mysqli_fetch_assoc(mysqli_query($db, $userdataquery));
+    
+    unset($userdata["username"]);
+    unset($userdata["password"]);
+    unset($userdata["loginid"]);
+    
+    $jsonRep = json_encode($userdata);
+
+    echo <<< S
+    <script>
+    var accountData = $jsonRep;
+    </script>
+S;
+?>
 <html>
 
 <head>
@@ -24,7 +45,7 @@
     <div id="div_profile">
         <section>
             <div id="div_profpic">
-                <img style="width: 128px;" src="profile-image-placeholder.png">
+                <img id="img_profile" style="width: 128px;" src="profile-image-placeholder.png">
             </div>
             <div id="div_accinfo">
                 <h3 class="white_text inlineob" id="prof_name">ABC</h3>
@@ -58,13 +79,15 @@
         <h2 class="white_text">Contact info</h2>
         <hr>
         <p id="contact_info_p" class="white_text">
-            E-mail: abc@xyz.com <br>
-            Phone: 1800-XYZ-ABCD
+            E-mail: <span id="prof_email">abc@xyz.com</span> <br>
+            Phone: <span id="prof_phone">1800-XYZ-ABCD</span>
         </p>
     </div>
 
 
+    <script src="profile_page.js">
 
+    </script>
 </body>
 
 </html>
