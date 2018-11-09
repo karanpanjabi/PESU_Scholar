@@ -12,7 +12,7 @@ This is the github repo for the web-tech project undertaken by section D chaps: 
     * Edit profile details page: Not started
     * Research/Project submission page: Not started
     * Discussion-space: Not started
-    * Landing-page: Not started
+    * Landing-page: Structure created (progress 10%)
 2.
     Back-end:
     * Account-system: 75%
