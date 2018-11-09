@@ -1,7 +1,8 @@
 body
 {
-	background: url("rs.jpg");
-	background-size: cover;
+	/*background: url("rs.jpg");*/
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
 	margin: 0;
 }
 
@@ -24,7 +25,7 @@ input
 	border:none;
 }
 
-div
+#form
 {
 	width: 30%;
 	height: 400px;
@@ -33,6 +34,17 @@ div
 	position: absolute;
 	top: 150px;
 	left: 480px;
+}
+
+#overlay
+{
+	background-image: url('rs.jpg');
+	background-size: cover; 
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
 }
 
 form
@@ -57,4 +69,23 @@ img
 {
 	display: block;
 	margin: -75px auto 0 auto;
+}
+
+input[type=submit],input[type=reset] {
+    width: 50%;
+    background-color: #000080;
+    color: white;
+    padding: 15px 20px;
+    margin: 5px 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+input[type=email],
+input[type=password]
+{
+	color: #777;
+    font-size: 20px;
+    font-family: calibri;
+    font-style: bold;
 }
