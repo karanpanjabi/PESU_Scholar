@@ -56,16 +56,6 @@ S;
         <section>
             <h2 class="white_text">Research/Projects</h2>
             <div id="res_proj">
-                <div class="res_proj_el">
-                    <h3>Project title</h5>
-                        <p>Project description</p>
-                </div>
-                <hr>
-                <div class="res_proj_el">
-                    <h3>Project title</h5>
-                        <p>Project description</p>
-                </div>
-                <hr>
                 <a href="#">
                     <div id="res_proj_new">
                         <p>+</p>
@@ -84,6 +74,13 @@ S;
         </p>
     </div>
 
+    <template id="proj_data_template">
+        <div class="res_proj_el">
+            <h3>Project title</h5>
+            <p>Project description</p>
+        </div>
+        <hr>
+    </template>
 
     <script src="profile_page.js">
 

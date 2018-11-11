@@ -3,3 +3,16 @@ document.querySelector("#prof_name").textContent = accountData["fullname"];
 document.querySelector("#acc_type").textContent = accountData["acctype"];
 document.querySelector("#prof_email").textContent = accountData["email"];
 document.querySelector("#prof_phone").textContent = accountData["phno"];
+
+//Read project info
+accountData["projectdata"] = JSON.parse(accountData["projectdata"]);
+//for each project initialize the #proj_data_template and add it to #res_proj div
+var projDiv = document.querySelector("#res_proj");
+var projTemplate = document.querySelector("#proj_data_template");
+for(var projinfo of accountData["projectdata"])
+{
+    var clone = document.importNode(projTemplate.content, true);
+    clone.querySelector("h3").textContent = projinfo["title"];
+    clone.querySelector("p").textContent = projinfo["desc"];
+    projDiv.insertBefore(clone, projDiv.lastElementChild);
+}
