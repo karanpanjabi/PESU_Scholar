@@ -10,7 +10,6 @@ Q;
     if($_REQUEST["password"] == $pass) //TODO: replace this with sql queries
     {
         //set cookie to logged in and redirect
-        //TODO: set cookie to logged in for the user, and update last login in db as well?
         $loginid = md5(time().$_REQUEST["username"]);
         setcookie("loginId", $loginid, time() + 5*60);
         setcookie("username", $_REQUEST["username"], time() + 5*60);

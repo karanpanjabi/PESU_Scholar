@@ -8,11 +8,11 @@
 <body>
 <div id="overlay">
 	<div id="form" align="center">
-		<form action="" method="POST">
+		<form action="login.php" method="POST" onsubmit="subm(event);">
 			<img src="1.png">
 			<b>Login</b>
-			<input type="email" name="" placeholder="Username">
-			<input type="password" name="Password" placeholder="Password">
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" id="password" placeholder="Password">
 			<input type="submit" name="" value="LOGIN" id="login">
 			<a href="">Not a member yet?</a>
 		</form>

@@ -7,11 +7,19 @@
     SELECT * FROM $table WHERE username='{$_COOKIE["profgetusername"]}'
 Q;
     $userdata = mysqli_fetch_assoc(mysqli_query($db, $userdataquery));
-    
+
+
+    //Set content to editable if loginid fetched from db and the one stored in cookies are same
+    $editable = false;
+    if(isset($_COOKIE["loginId"]) && $userdata["loginid"] == $_COOKIE["loginId"])
+    {
+        $editable = true;
+    }
+
     unset($userdata["username"]);
     unset($userdata["password"]);
     unset($userdata["loginid"]);
-    
+    $userdata["editable"] = $editable;
     $jsonRep = json_encode($userdata);
 
     echo <<< S
@@ -36,7 +44,7 @@ S;
     <div id="navbar">
         <h1>PESU_Scholar</h1>
         <nav>
-            Home | About | Logout
+            <a href="home.php">Home</a> | <a href="about.html">About</a> | <a href="logout.php" id="logout_button">Logout</a>
         </nav>
     </div>
 
@@ -56,7 +64,7 @@ S;
         <section>
             <h2 class="white_text">Research/Projects</h2>
             <div id="res_proj">
-                <a href="#">
+                <a href="#" class="editable">
                     <div id="res_proj_new">
                         <p>+</p>
                     </div>
