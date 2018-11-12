@@ -11,8 +11,8 @@ Q;
     {
         //set cookie to logged in and redirect
         $loginid = md5(time().$_REQUEST["username"]);
-        setcookie("loginId", $loginid, time() + 5*60);
-        setcookie("username", $_REQUEST["username"], time() + 5*60);
+        setcookie("loginId", $loginid, time() + 60*60); //logged in for an hour
+        setcookie("username", $_REQUEST["username"], time() + 60*60);
         setcookie("profgetusername", $_REQUEST["username"]);
 
         $loginUpdateQuery = <<< Q

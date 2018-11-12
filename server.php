@@ -46,8 +46,8 @@
 			$password=md5($pass); //encrypt password
 			
 			$loginid = md5(time().$username);
-			setcookie("loginId", $loginid, time() + 5*60);
-			setcookie("username", $username, time() + 5*60);
+			setcookie("loginId", $loginid, time() + 60*60); //logged in for an hour
+			setcookie("username", $username, time() + 60*60);
 			setcookie("profgetusername", $username); //this cookie determines whose profile opens up when the person opens profile_page.php
 
 			$sql="INSERT INTO $table (username,email,password,acctype,loginid) 

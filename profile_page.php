@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <?php
-    require("dbinfo.php");
 
-    $table = "accountinfo";
-    $userdataquery = <<< Q
-    SELECT * FROM $table WHERE username='{$_COOKIE["profgetusername"]}'
-Q;
-    $userdata = mysqli_fetch_assoc(mysqli_query($db, $userdataquery));
-
-
-    //Set content to editable if loginid fetched from db and the one stored in cookies are same
-    $editable = false;
-    if(isset($_COOKIE["loginId"]) && $userdata["loginid"] == $_COOKIE["loginId"])
+    if(isset($_COOKIE["profgetusername"]))
     {
-        $editable = true;
-    }
+        require("dbinfo.php");
 
-    unset($userdata["username"]);
-    unset($userdata["password"]);
-    unset($userdata["loginid"]);
-    $userdata["editable"] = $editable;
-    $jsonRep = json_encode($userdata);
+        $table = "accountinfo";
+        $userdataquery = <<< Q
+        SELECT * FROM $table WHERE username='{$_COOKIE["profgetusername"]}'
+Q;
+        $userdata = mysqli_fetch_assoc(mysqli_query($db, $userdataquery));
 
-    echo <<< S
-    <script>
-    var accountData = $jsonRep;
-    </script>
+
+        //Set content to editable if loginid fetched from db and the one stored in cookies are same
+        $editable = false;
+        if(isset($_COOKIE["loginId"]) && $userdata["loginid"] == $_COOKIE["loginId"])
+        {
+            $editable = true;
+        }
+
+        unset($userdata["username"]);
+        unset($userdata["password"]);
+        unset($userdata["loginid"]);
+        $userdata["editable"] = $editable;
+        $jsonRep = json_encode($userdata);
+
+        echo <<< S
+        <script>
+        var accountData = $jsonRep;
+        </script>
 S;
+    }
 ?>
 <html>
 
@@ -64,7 +68,7 @@ S;
         <section>
             <h2 class="white_text">Research/Projects</h2>
             <div id="res_proj">
-                <a href="#" class="editable">
+                <a href="#" class="editable" onclick="createform();">
                     <div id="res_proj_new">
                         <p>+</p>
                     </div>
@@ -86,6 +90,17 @@ S;
         <div class="res_proj_el">
             <h3>Project title</h5>
             <p>Project description</p>
+        </div>
+        <hr>
+    </template>
+
+    <template id="proj_form_template">
+        <div class="res_proj_el">
+            <form method="POST" action="profile_project_submit.php">
+                <input type="text" name="title" placeholder="Project Title" minlength="1"> <br><br>
+                <textarea name="desc" placeholder="Project Description" minlength="1"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
         <hr>
     </template>
