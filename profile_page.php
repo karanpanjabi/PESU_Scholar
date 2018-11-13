@@ -48,7 +48,7 @@ S;
     <div id="navbar">
         <h1>PESU_Scholar</h1>
         <nav>
-            <a href="home.php">Home</a> | <a href="about.html">About</a> | <a href="logout.php" id="logout_button">Logout</a>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="logout.php" id="logout_button">Logout</a>
         </nav>
     </div>
 
