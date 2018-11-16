@@ -20,7 +20,7 @@
 			<input type="submit" name="register">
 			<input type="reset">
 			<p>
-				Already a memeber? <a href="login.php">Sign In</a>
+				Already a memeber? <a href="login.html">Sign In</a>
 			</p>
 		</form>
 	</div>
