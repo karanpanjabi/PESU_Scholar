@@ -28,5 +28,7 @@ Q;
     else
     {
         echo "Could not log you on <br>"; //TODO: replace this with error logging in page
+        header("Location: login_error.html");
+        exit(); 
     }
 ?>
