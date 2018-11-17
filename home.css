@@ -1,0 +1,119 @@
+body
+{
+	margin: -1px;
+	padding: px;
+	background: #f0f0f0;
+}
+
+.main
+{
+	font-family: helvetica;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+}
+
+
+#entire
+{
+	margin: 40px;
+	padding: 20px;
+}
+
+.quote
+{
+	background-image: url("tag2.jpg");
+	width: 100%;
+	height: 500px;
+	display:inline-block;
+  	padding:0px;
+  	margin-left:-4px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+.tag
+{
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+}
+
+img
+{
+	width: 80%;
+	height: 500px;
+}
+
+
+a
+{
+	font-family: calibri;
+	size: 18px;
+	color:white;
+}
+
+h1
+{
+	font-family: courier;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2
+{
+	font-family: courier;
+	font-size: 40px;
+}
+
+h3
+{
+	font-family: courier;
+	font-size: 30px;
+}
+
+table
+{
+	font-family: helvetica;
+	font-size: 20px;
+}
+
+.odd
+{
+	background-color: #ABABB4;
+}
+
+.even
+{
+	background-color: #D9DAEC;
+}
+
+.table_head
+{
+	background-color: #06084A;
+	color: white;
+}
+
+p
+{
+	font-family: Verdana;
+	font-size: 25px;
+}
+
+ul
+{
+	font-size: 20px;
+	font-family: Verdana;
+}
+
+#venue
+{
+	font-size: 20px;
+	font-family: Verdana;
+}
