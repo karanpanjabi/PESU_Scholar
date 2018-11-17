@@ -38,7 +38,7 @@ input
 
 #overlay
 {
-	background-image: url('rs.jpg');
+	background-image: url('tag2.jpg');
 	background-size: cover; 
 	background-position: center center;
 	position: relative;
@@ -81,11 +81,34 @@ input[type=submit],input[type=reset] {
     border-radius: 4px;
     cursor: pointer;
 	}
-input[type=email],
+input[type=text],
 input[type=password]
 {
 	color: #777;
     font-size: 20px;
     font-family: calibri;
     font-style: bold;
+}
+
+.main
+{
+	font-family: arial;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+a
+{
+	font-family: arial;
+	size: 18px;
+	color:white;
 }
