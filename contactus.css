@@ -1,6 +1,6 @@
 .main
 {
-	font-family: courier;
+	font-family: arial;
 	color: white;
 	font-size: 30px;
 	/*background-color: #25C6CE;*/
@@ -16,7 +16,7 @@ span
 }
 
 a{
-	font-family: calibri;
+	font-family: arial;
 	size: 18px;
 	color: white;
 }
