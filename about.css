@@ -1,0 +1,22 @@
+.main
+{
+	font-family: courier;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+	margin: -8px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+a{
+	font-family: calibri;
+	size: 18px;
+	color: white;
+}
