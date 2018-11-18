@@ -1,0 +1,47 @@
+.main
+{
+	font-family: courier;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+	margin: -8px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+a{
+	font-family: calibri;
+	size: 18px;
+	color: white;
+}
+
+#ct{
+	margin-top: 5%;
+	text-align: center;
+	background-color: rgba(255,255,255,.4);
+}
+
+p{
+	font-family: calibri;
+	font-size: 25px;
+}
+
+#ln{
+	height: 50px;
+}
+
+#fb{
+	height: 50px;
+	margin-left: -10%;
+}
+
+#g{
+	height: 50px;
+	margin-left: -10%;
+}
