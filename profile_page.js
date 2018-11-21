@@ -4,10 +4,17 @@ if (typeof accountData === 'undefined' || !accountData["editable"]) //the user i
 }
 
 if (typeof accountData !== 'undefined') {
+
+    if(accountData["profpicurl"])
     document.querySelector("#img_profile").src = accountData["profpicurl"];
+
+    if(accountData["fullname"])
     document.querySelector("#prof_name").textContent = accountData["fullname"];
     document.querySelector("#acc_type").textContent = accountData["acctype"];
+
+    if(accountData["email"])
     document.querySelector("#prof_email").textContent = accountData["email"];
+    if(accountData["phno"])
     document.querySelector("#prof_phone").textContent = accountData["phno"];
 
     if (accountData["projectdata"] != "") {

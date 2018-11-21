@@ -17,6 +17,9 @@
 		$pass=mysqli_real_escape_string($db,$_POST['pass']);
 		$cpass=mysqli_real_escape_string($db,$_POST['cpass']);
 		$user=$_POST['user'];
+		$fullname = $_POST['name'];
+		$profurl = $_POST['photo'];
+		$phone = $_POST['phone'];
 
 		//ensure all fields are filled
 		if($username=="")
@@ -50,8 +53,8 @@
 			setcookie("username", $username, time() + 60*60);
 			setcookie("profgetusername", $username); //this cookie determines whose profile opens up when the person opens profile_page.php
 
-			$sql="INSERT INTO $table (username,email,password,acctype,loginid) 
-					VALUES ('$username','$email','$password','$user', '$loginid')";
+			$sql="INSERT INTO $table (username,email,password,acctype,loginid,fullname,profpicurl,phno) 
+					VALUES ('$username','$email','$password','$user', '$loginid', '$fullname','$profurl','$phone')";
 			mysqli_query($db,$sql);
 			$_SESSION['username']=$username;
 			$_SESSION['success']="You are noe logged in";

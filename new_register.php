@@ -9,16 +9,16 @@
 	<div class="main">&nbsp;&nbsp;&nbsp;Register
 			<span>
 			<a href="login.html" class="navi">Your Profile</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-			<a href="" class="navi">Contact Us</a>&nbsp;&nbsp;|&nbsp;
-			<a href="" class="navi">About</a>&nbsp;&nbsp;</span>
+			<a href="contactus.html" class="navi">Contact Us</a>&nbsp;&nbsp;|&nbsp;
+			<a href="about.html" class="navi">About</a>&nbsp;&nbsp;</span>
 	</div>
 
 <!-- ******************************************************************************************************** -->
 	<form method="post" action="new_register.php" align="center">
 			<input type="text" name="name" placeholder="Full Name" required=""><br>
 			<input type="email" name="email" placeholder="Email" required=""><br>
-			<input type="text" name="phone" placeholder="Phone number" required=""><br>
-			<input type="text" name="photo" placeholder="Profile Picture Link" required=""><br>
+			<input type="text" name="phone" placeholder="Phone number"><br>
+			<input type="text" name="photo" placeholder="Profile Picture Link"><br>
 			<input type="text" name="username" placeholder="Username" required=""><br>
 			<input type="Password" name="pass" placeholder="Password" required=""><br>
 			<input type="Password" name="cpass" placeholder="Confirm Password" required=""><br>
