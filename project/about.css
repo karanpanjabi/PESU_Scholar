@@ -1,0 +1,33 @@
+.main
+{
+	font-family: courier;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+	margin: -8px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+a{
+	font-family: arial;
+	size: 18px;
+	color: white;
+}
+
+h1
+{
+	text-align: center;
+	font-family: arial;
+}
+
+pre
+{
+	margin-left: 200px;
+}

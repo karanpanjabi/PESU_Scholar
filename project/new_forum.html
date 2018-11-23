@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discussion Forum</title>
+	<link rel="stylesheet" type="text/css" href="forum_css.css">
+	<link rel="icon" type="image" href="logo.jpg">
+</head>
+<body background="tag2.jpg">
+	<div class="main">&nbsp;&nbsp;&nbsp;Discussion Forum
+			<span>
+			<a href="index.html" class="navi">Home</a>&nbsp;|
+			<a href="login.html" class="navi">Your Profile</a>&nbsp;|
+			<a href="" class="navi">Contact Us</a>&nbsp;|
+			<a href="" class="navi">About</a>&nbsp;</span>
+		</div>
+	<!--<h1 align="center"><u>Discussion Section</u></h1>-->
+	
+	<form>
+		<textarea id="words" rows="5" cols="80" placeholder="Ask a question!!" style="resize: none"></textarea><br>
+		<input type="button" onclick="getwords()" value="Enter" id="button"> <br>
+	<!--	<p id="para"></p> -->
+	</form>
+
+	<script type="text/javascript">
+
+	function getwords() 
+	{
+  		text = words.value;
+
+  		var para=document.createElement('p');
+  		para.innerHTML += '<p>'+text;
+  		document.body.appendChild(para);
+
+  		//document.getElementById("para").innerHTML += '<p>'+text;
+  		document.getElementById("words").value = "";
+
+  		var reply=document.createElement('textarea');
+  		reply.setAttribute('id','rwords');
+  		reply.setAttribute('rows',5);
+  		reply.setAttribute('cols',80);
+  		reply.setAttribute('placeholder','Answer it!!');
+  		document.body.appendChild(reply);
+  		
+  		var brk=document.createElement('br');
+  		document.body.appendChild(brk);
+
+  		var rbutton=document.createElement('input');
+  		rbutton.setAttribute('type','button');
+  		rbutton.setAttribute('value','Answer');
+  		rbutton.setAttribute('id','button');
+  		document.body.appendChild(rbutton);
+
+  		rbutton.setAttribute('onclick','getr();');
+	}	
+
+	function getr()
+	{
+		text = rwords.value;
+
+  		var para=document.createElement('p');
+  		para.innerHTML += '<p>'+text;
+  		para.setAttribute('id','reply');
+  		document.body.appendChild(para);
+  		document.getElementById("rwords").value = "";
+
+  		
+
+
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+#words{
+	display: block;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #232484;
+	border-style: solid;
+	border-width: 3px;
+	font-family: calibri;
+	font-size: 18px;
+}
+
+#button{
+	margin: auto;
+	display: block;
+}
+
+p{
+	margin-left: 10%;
+	font-family: calibri;
+	font-size: 20px;
+}
+
+#rwords{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	resize: none;
+	border-color: #232484;
+	border-style: solid;
+	border-width: 3px;
+	font-family: calibri;
+	font-size: 17px;
+}
+
+#reply{
+	margin-left: 23%;
+	font-family: calibri;
+	font-size: 20px;
+}
+
+.main
+{
+	font-family: courier;
+	color: white;
+	font-size: 30px;
+	/*background-color: #25C6CE;*/
+	background-image: linear-gradient(to right,#04053D,#04053D,#232484,#04053D,#04053D );
+	padding: 20px;
+	margin: -8px;
+}
+
+span
+{
+	font-size: 20px;
+	float: right;
+}
+
+a{
+	font-family: calibri;
+	size: 18px;
+	color: white;
+}
